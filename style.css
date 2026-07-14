@@ -1,0 +1,722 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* ================= root ================= */
+:root {
+    /* primary Color*/
+    --primary-purple: #6C63FF;
+    --dark-purple: #5B4BFF;
+    --light-purple: #8B7DFF;
+    --accent-violet:#7C3AED;
+
+    /* Light Mode*/
+    --background:#e2e9f0;
+    --secondary-background: #FFFFFF;
+    --sidebar:#FFFFFF;
+    --card: #FFFFFF;
+    --card-hover: #F1F5F9;
+    --border: #2A3347;
+    --border-hover: #2A3347;
+
+    /* Text Color */
+    --primary-text: #0F172A;
+    --secondary-text:#475569;
+    --muted-text: #64748B;
+
+    /* button color*/
+    --btn-background:#6C63FF;
+    --btn-background2:#7C3AED;
+    --btn-hover:#5B4BFF;
+    --btn-text:#ffffff;
+    --secondary-btn:#ffffff;
+    --secondary-btn-border:#6C63FF;
+    --btn-style:rgba(30, 46, 221, 0.20);
+
+    /* Icon Color */
+    --active-icon:#6C63ff;
+    --normal-icon:#64748B;
+}
+
+.dark {
+    /* dark mode*/
+    --background:#0B0F19;
+    --secondary-background: #111827;
+    --sidebar:#0F172A;
+    --card: #161B26;
+    --card-hover: #1E293B;
+    --border-hover:  #8B7DFF;
+    --border: #2A3347;
+
+    /* Text Color */
+    --primary-text: #ffffff;
+    --secondary-text:#CBD5E1;
+    --muted-text: #94A3B8;
+
+    /* Icon Color */
+    --normal-icon:#94A3B8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ================= Body ================= */
+body{
+   background-color: var(--background);
+   color: var(--primary-text);
+}
+
+/* background: linear-gradient(to right, var(--buttonColor1), var(--borderColor)); */
+
+/* ================= Hero Section ================= */
+
+/* ================= nav-box ================= */
+.nav-box {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--card);
+}
+.menu-icon, .theme {
+    margin-top: 10px;
+}
+.menu-icon {
+    margin-left: 15px;
+}
+#themeBtn {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 15px;
+}
+/*=================Section =================*/
+section {
+    scroll-margin-top: 30px; /*nav bar ki height*/
+}
+/*================= Menu Section =================*/
+.menu-section {
+    position:fixed;
+    top: 40px;
+    left: 0;
+    width: 250px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--card);
+    border-radius: 0px 5px 5px 0px;
+    border: 2px solid var(--border);
+    display: none;
+}
+.menu-section a{
+    display: block;
+    text-decoration: none;
+}
+.menu-section .profile{
+    text-align: center;
+    color: var(--primary-text);
+    padding: 5px;
+    border-bottom: 2px solid var(--border);
+}
+.menu-section .profile h3{
+    font-size: 2rem;
+    color: var(--primary-purple);
+}
+.menu-section .profile p{
+    color: var(--accent-violet);
+}
+.menu-item {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    color: var(--primary-text);
+    cursor: pointer;
+}
+.menu-item i{
+    padding: 5px;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, var(--btn-background2), var(--btn-background));
+    border-bottom:4px solid var(--dark-purple); 
+    box-shadow: 0 0 20px var(--primary-purple);
+}
+/* ================= profile-section ================= */
+.profile-section {
+    margin-left: 15px;
+    margin-top:50px ;
+    height: 250px;
+}
+.profile-text {
+    width: 300px;
+    line-height: 20px;
+    margin-left: 40px;
+}
+/* profile Information */
+.Profile-info{
+    width: 350px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.Profile-info h2{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 45px;
+}
+.color-text {
+    color: var(--accent-violet);
+}
+.Profile-info h5{
+    font-size: 1rem;
+    color: var(--accent-violet);
+}
+
+/* ================= Button ================= */
+.btn {
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    color: var(--btn-text);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--primary-purple);
+}
+.button {
+    /* background:linear-gradient(to right, var(--color3), var(--borderColor)); */
+    /* background-color: var(--btn-background2); */
+    background: linear-gradient(to right, var(--btn-background2), var(--btn-background)); 
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--btn-hover);
+    border-bottom: 5px solid var(--border-hover);
+    border-right: 5px solid var(--border-hover);
+}
+/*  profile btn  */
+.contact-me {
+    color: var(--primary-text);
+}
+.profile-btn i{
+    margin: 5px;
+}
+/*  profile Image  */
+.image-box {
+    display: inline-block;
+    height: 230px;
+    width: 220px;
+    margin-left: 10%;
+}
+.image-box:hover {
+    transform: scale(1.05);
+    translate: 5% -5%;
+}
+.profile-image {
+    height: 230px;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--primary-purple);
+}
+
+/* ================= About Me ================= */
+.about-section {
+    display: flex;
+    width: 90%;
+    margin-block: 10px;
+    padding: 5px;
+    margin-left: 25px;
+    background-color: var(--card);
+    box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2);
+}
+.about-info {
+    display: inline-block;
+    width: 40%;
+}
+.about-section h3{
+    margin-bottom: 5px;
+    font-weight:600 ;
+}
+.about-section i,h4{
+    color: var(--accent-violet);
+}
+.info-box {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:10% ;
+    justify-content: space-evenly;
+}
+.info-box-item {
+    display: flex;
+    height: 70px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+}
+.info-box-item i{
+    width: 40px;
+    height: 100%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.info-box-item .title{
+    text-align: center;
+    margin-top: 10px;
+}
+.dim-text-color {
+    color: var(--muted-text);
+}
+.info-box-item p{
+    font-size: 13px;
+}
+/*================= Education Section=================*/
+/*card */
+.card {
+    height: auto;
+    width: 90%;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left:30px ;
+    padding: 10px;
+    background-color: var(--card);
+    border-left: 4px solid var(--primary-purple);
+    border-radius: 5px;
+}
+.card h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: var(--primary-purple);
+}
+.line-box{
+    height: 20px;
+    margin-left: 10px;
+}
+.point {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-violet);
+    box-shadow: 0 0 20px var(--primary-purple);
+}
+.line {
+    height: 110px;
+    width: 2px;
+    margin-left: 4px;
+    background-color: var(--primary-purple);
+  /*  background:linear-gradient(to right, green, var(--primary-purple)); */
+}
+.presentLine {
+    background: linear-gradient(
+        to bottom,
+        #4ADE80 0%,
+        #16A34A 70%,
+        #5B4BFF 70%,
+        #6C63FF 100%
+    );
+}
+.education {
+    display: flex;
+}
+.education .title{
+    width: 90%;
+    margin-left:10px ;
+    margin-block: 10px;
+    font-weight: 400;
+}
+.education .title span{
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 12px;
+    color: #22C55E;
+    background: rgba(34, 197, 94, 0.15);
+}
+/* ================= Technical Section =================*/
+/*================= Programming Languages Section =================*/
+/*================= Tool & platforms Section =================*/
+.box-contenar {
+    display: flex;
+    width: 100%;
+}
+.technical-section {
+    width: 50%;
+}
+
+.languages-section {
+    width: 40%;
+}
+.tool-section {
+    width: 95%;
+}
+.head-box {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.head-box p{
+    width: 70px;
+    font-size: 12px;
+    padding: 5px;
+    color: var(--primary-purple);
+}
+.skills-box{
+    height: auto;
+    width: 95%;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left:20px ;
+    padding: 10px;
+    background-color: var(--card);
+    border-left: 4px solid var(--btn-background2);
+    border-radius: 5px;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2);
+}
+.skills-box h3{
+    color: var(--primary-text);
+}
+.languages-skill, .technical-skill,.tool-skill  {
+    display: flex;
+    overflow-x:auto ;
+    gap: 1rem;
+    overflow-Y:hidden;
+    white-space:nowrap;
+    /*scrollbar hide*/
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE & Edge */
+}
+.technical-skill::-webkit-scrollbar {
+    display: none;
+}
+.languages-skill::-webkit-scrollbar {
+    display: none;
+}
+.tools-skill::-webkit-scrollbar {
+    display: none;
+}
+.languages-img, .skills-img, .tools-img {
+    height: 90px;
+    width: 80px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.skill-image{
+    margin: 3px;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* technical code*/
+.head-box h3{
+    color: var(--accent-violet);
+}
+.skill-title{
+    width:75px ;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: var(--accent-violet);
+    background:rgba(86, 35, 237, 0.15);
+}
+/* technical code*/
+#img1, #icon4, #image1{
+    color: rgb(232, 97, 48); }
+#img2, #icon1, #img4, #image2{
+    color: rgb(66, 43, 220); }
+#img5, #icon2{
+    color: rgb(218, 68, 30); }
+
+/*  language code*/
+
+#image3, #img3{
+    color: rgb(232, 232, 6); }
+/* tools & platforms*/
+#icon3 {
+    color: black;
+}
+.languages-img:hover,.skills-img:hover, .tools-img:hover {
+    transform: scale(1.05);
+    translate: 5% -5%;
+}      
+/*================= Projects Section =================*/
+.project-section {
+    width: 95%;
+    height: auto;
+    margin: 20px;
+}
+.project-section .project-contenar{
+    display: flex;
+    overflow-x:auto ;
+    gap: 1rem;
+    overflow-Y:hidden;
+    white-space:nowrap;
+    /*scrollbar hide*/
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE & Edge */
+}
+.technical-skill::-webkit-scrollbar {
+    display: none;
+}
+.project-box {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    background-color: var(--card);
+    flex-shrink: 0;
+}
+.project-box  h3{
+    font-size: 18px;
+}
+.project-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.project-box p{
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 3px;
+}
+.project-footer a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: var(--primary-purple);
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: var(--btn-style);
+}
+.project-footer a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--primary-purple);
+}
+       
+/*================= Experience Section =================*/
+.card-box {
+    display: flex;
+}
+       
+/*================= Internship Section =================*/
+
+       
+/*================= Certifications Section =================*/
+
+/*================= Achievements Section =================*/
+
+       
+/*================= Coding Profile =================*/
+
+/*================= GitHub Statistics =================*/
+
+/*================= Resume =================*/
+
+
+/*================= universal =================*/
+.head-box:hover p i{
+    margin-left: 7px;
+}
+/*================= Normal Mobile  =================*/
+@media (max-width: 768px) {
+    /* ================= profile-section ================= */
+    .profile-section {
+        display: flex;
+        height: auto;
+       font-size: 13px;
+    }
+    /* profile Information */
+    .Profile-info{
+        width: 50%;
+        margin-left: 5px;
+        display: inline-block;
+    }
+    .profile-text {
+        width: 100%;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    .Profile-info h2{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .Profile-info h5{
+        font-size: 0.7rem;
+    }
+    /* ================= Button ================= */
+    .btn {
+        display: block;
+        width: 120px;
+        height: 25px;
+        padding: 3px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    /*  profile btn  */
+    .profile-btn i{
+        margin: 2px;
+    } 
+    /*  profile Image  */
+    .image-box {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+    }
+    .profile-image {
+        width: 95%;
+        border-radius: 5px;
+        box-shadow: 0 0 20px var(--primary-purple);
+    }   
+    /* ================= About Me ================= */
+    .about-section {
+        display: inline-block;
+        width: 90%;
+        margin-block: 5px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    .about-info {
+        display: inline-block;
+        width: 100%;
+    }
+    .info-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:10px ;
+        justify-content: space-evenly;
+    }
+    .info-box-item {
+        display: flex;
+        height: 60px;
+        width: 40%;
+        margin: 3px;
+    }
+    .info-box-item i{
+        width: 40px;
+        height: 100%;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .info-box-item .title{
+        text-align: center;
+        margin-top: 4px;
+    }
+    .info-box-item p{
+        font-size: 13px;
+    }
+
+        /*================= Education Section=================*/
+    /*card */
+    .card {
+        height: auto;
+        width: 85%;
+        margin: 10px;
+        margin-top: 30px;
+        margin-left:20px ;
+        padding: 10px;
+    }
+    .line-box{
+        height: auto;
+        margin-left: 10px;
+    }
+    .point {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: var(--accent-violet);
+        box-shadow: 0 0 20px var(--primary-purple);
+    }
+    .line {
+        height: 120PX;
+    }
+    /* ================= Technical Section =================*/
+    .box-contenar {
+        display: inline-block;
+        width: 95%;
+    }
+    .tool-section {
+        margin-left: 10px;
+    }
+    /*================= Programming Languages Section =================*/
+    .languages-section, .technical-section {
+        width: 95%;
+        margin-left: 10px;
+    }
+    .skills-box {
+        height: auto;
+        width: 95%;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .languages-skill, .technical-skill, .tool-skill{
+        display: flex;
+        overflow-x:auto ;
+        gap: 1rem;
+        overflow-Y:hidden;
+        white-space:nowrap;
+        /*scrollbar hide*/
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE & Edge */
+    }
+    .technical-skill::-webkit-scrollbar {
+        display: none;
+    }
+    .languages-skill::-webkit-scrollbar {
+        display: none;
+    }
+    .tool-skill::-webkit-scrollbar {
+        display: none;
+    }
+    .languages-img.skills-img, .tools-img {
+        height: 80px;
+        width: 70px;
+        margin: 5px;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+            
+    /*================= Projects Section =================*/
+    .project-section .project-contenar{
+        display: flex;
+        overflow-x:auto ;
+        gap: 1rem;
+        overflow-Y:hidden;
+        white-space:nowrap;
+        /*scrollbar hide*/
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE & Edge */
+    }
+    .technical-skill::-webkit-scrollbar {
+        display: none;
+    }
+    .project-box {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid var(--border);
+        background-color: var(--card);
+        flex-shrink: 0;
+    }
+    .project-box p{
+        font-size: 14px;
+    }
+   
+}
