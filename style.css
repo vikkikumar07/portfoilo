@@ -596,14 +596,14 @@ section {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        margin-left:10px ;
+        margin-left:5px ;
         justify-content: space-evenly;
     }
     .info-box-item {
         display: flex;
         height: 60px;
-        width: 40%;
-        margin: 3px;
+        width: 45%;
+        margin: 2px;
     }
     .info-box-item i{
         width: 40px;
@@ -614,7 +614,6 @@ section {
     .info-box-item .title{
         text-align: center;
         margin-top: 4px;
-        font-size: 12px;
     }
     .info-box-item p{
         font-size: 13px;
