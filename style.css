@@ -531,6 +531,9 @@ section {
 }
 /*================= Normal Mobile  =================*/
 @media (max-width: 768px) {
+    .nav-box {
+        height: 50px;
+    }
     /* ================= profile-section ================= */
     .profile-section {
         display: flex;
