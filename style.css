@@ -617,6 +617,7 @@ section {
     .info-box-item .title{
         text-align: center;
         margin-top: 4px;
+        font-size: 12px;
     }
     .info-box-item p{
         font-size: 13px;
