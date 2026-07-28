@@ -314,7 +314,7 @@ section {
     box-shadow: 0 0 20px var(--primary-purple);
 }
 .line {
-    height: 110px;
+    height: 120px;
     width: 2px;
     margin-left: 4px;
     background-color: var(--primary-purple);
@@ -644,7 +644,7 @@ section {
         box-shadow: 0 0 20px var(--primary-purple);
     }
     .line {
-        height: 120PX;
+        height: 140PX;
     }
     /* ================= Technical Section =================*/
     .box-contenar {
