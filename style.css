@@ -98,6 +98,9 @@ body{
 section {
     scroll-margin-top: 30px; /*nav bar ki height*/
 }
+.main-box {
+    margin-block:80px ;
+}
 /*================= Menu Section =================*/
 .menu-section {
     position:fixed;
@@ -148,7 +151,7 @@ section {
 /* ================= profile-section ================= */
 .profile-section {
     margin-left: 15px;
-    margin-top:50px ;
+    /* margin-t:50px ; */
     height: 250px;
 }
 .profile-text {
@@ -454,7 +457,7 @@ section {
 .project-section {
     width: 95%;
     height: auto;
-    margin: 20px;
+    margin-inline: 20px;
 }
 .project-section .project-contenar{
     display: flex;
