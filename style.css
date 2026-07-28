@@ -668,13 +668,13 @@ section {
     }
     .languages-skill, .technical-skill, .tool-skill{
         display: flex;
-        overflow-x:auto ;
         gap: 1rem;
-        overflow-Y:hidden;
+        overflow-y:hidden ;
+        overflow-x:auto ;
         white-space:nowrap;
-        /*scrollbar hide*/
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE & Edge */
+       /* scrollbar hide*/
+        scrollbar-width: none;/* Firefox */
+        -ms-overflow-style: none;/* IE & Edge*/
     }
     .technical-skill::-webkit-scrollbar {
         display: none;
